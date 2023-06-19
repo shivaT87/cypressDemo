@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-15T17:49:03.689Z",
+    "end": "2023-06-15T17:49:47.140Z",
+    "duration": 43451,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8e58a03f-2a37-4456-98c6-fff68c1e56cb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Sample Framework\\Login.cy.js",
+      "file": "cypress\\e2e\\Sample Framework\\Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "04db39fd-38f3-4732-8cd1-bab2d3287c52",
+          "title": "Login Test cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create New User and delete it",
+              "fullTitle": "Login Test cases Create New User and delete it",
+              "timedOut": null,
+              "duration": 38896,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "userpage.clickUsersTab();\nuserpage.clickNewUserButton();\ncy.wait(3000);\nconst num = Date.now();\n//var timestamp = cy.moment().utc();\ncy.log(num);\nuserpage.createNewUser('Auto1_' + num, 'Test1_' + num, 'Test1@gmail.com', 'QA');\nuserpage.verifyUserinTable('Test1_' + num);\nuserpage.deleteUser('Test1_' + num);",
+              "err": {},
+              "uuid": "249ba53e-679f-412c-8e0f-b5ccf591313e",
+              "parentUUID": "04db39fd-38f3-4732-8cd1-bab2d3287c52",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "249ba53e-679f-412c-8e0f-b5ccf591313e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 38896,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
