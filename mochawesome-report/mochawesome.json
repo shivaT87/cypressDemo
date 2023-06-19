@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-15T17:49:03.689Z",
-    "end": "2023-06-15T17:49:47.140Z",
-    "duration": 43451,
+    "start": "2023-06-19T12:34:08.647Z",
+    "end": "2023-06-19T12:34:49.785Z",
+    "duration": 41138,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8e58a03f-2a37-4456-98c6-fff68c1e56cb",
+      "uuid": "843d2e11-f4ad-40bb-9103-17b7060b8176",
       "title": "",
       "fullFile": "cypress\\e2e\\Sample Framework\\Login.cy.js",
       "file": "cypress\\e2e\\Sample Framework\\Login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "04db39fd-38f3-4732-8cd1-bab2d3287c52",
+          "uuid": "6f64d7a1-764c-43bd-9736-ddeefd1d3867",
           "title": "Login Test cases",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Create New User and delete it",
               "fullTitle": "Login Test cases Create New User and delete it",
               "timedOut": null,
-              "duration": 38896,
+              "duration": 35924,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "userpage.clickUsersTab();\nuserpage.clickNewUserButton();\ncy.wait(3000);\nconst num = Date.now();\n//var timestamp = cy.moment().utc();\ncy.log(num);\nuserpage.createNewUser('Auto1_' + num, 'Test1_' + num, 'Test1@gmail.com', 'QA');\nuserpage.verifyUserinTable('Test1_' + num);\nuserpage.deleteUser('Test1_' + num);",
               "err": {},
-              "uuid": "249ba53e-679f-412c-8e0f-b5ccf591313e",
-              "parentUUID": "04db39fd-38f3-4732-8cd1-bab2d3287c52",
+              "uuid": "59fd02e4-928d-43fb-a16f-5b1f3ec76c03",
+              "parentUUID": "6f64d7a1-764c-43bd-9736-ddeefd1d3867",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "249ba53e-679f-412c-8e0f-b5ccf591313e"
+            "59fd02e4-928d-43fb-a16f-5b1f3ec76c03"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 38896,
+          "duration": 35924,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -3,7 +3,7 @@ pipeline{
     agent any
 
     parameters{
-        string(name: 'SPEC', defaultValue: "cypress/e2e/Sample Framework/Login.cy.js", description: "Enter the scripts path you want to execute")
+        string(name: 'SPEC', defaultValue: "cypress/e2e/SampleFramework/Login.cy.js", description: "Enter the scripts path you want to execute")
         choice(name: 'BROWSER', choices:['chrome','edge','firefox'], description: "choice the browser where you want to execute your scripts")
 
     }
@@ -31,7 +31,7 @@ pipeline{
 
     post{
         always{
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'mochawesome-report/mochawesome', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
         }
     }
 
